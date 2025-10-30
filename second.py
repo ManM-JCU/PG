@@ -1,7 +1,6 @@
 def cislo_na_slovo(cislo):
     """Převede číslo (0-100) na český slovní zápis"""
-
-jednotky = {
+    jednotky = {
     0: "nula",
     1: "jedna",
     2: "dvě",
@@ -12,9 +11,8 @@ jednotky = {
     7: "sedm",
     8: "osm",
     9: "devět",
-}
-
-desitky = {
+    }
+    desitky = {
     10: "deset",
     20: "dvacet",
     30: "třicet",
@@ -24,9 +22,8 @@ desitky = {
     70: "sedmdesát",
     80: "osmdesát",
     90: "devadesát",
-}
-
-teen = {
+    }
+    teen = {
     11: "jedenáct",
     12: "dvanáct",
     13: "třináct",
@@ -36,7 +33,7 @@ teen = {
     17: "sedmnáct",
     18: "osmnáct",
     19: "devatenáct",
-}
+    }
 
 #Logika převodu
 if cislo in jednotky:
