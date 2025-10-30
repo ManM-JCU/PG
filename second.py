@@ -34,22 +34,22 @@ def cislo_na_slovo(cislo):
     18: "osmnáct",
     19: "devatenáct",
     }
-
-#Logika převodu
-if cislo in jednotky:
-    return jednotky[cislo]
-elif cislo in teen:
-    return teen[cislo]
-elif cislo in desitky:
-    return desitky[cislo]
-elif 21 <= cislo < 100:
-    d = (cislo// 10) * 10
-    j = cislo % 10
-    return f"{desitky[d]} {jednotky[j]}"
-elif cislo == 100:
-    return "sto"
-else:
-    return "Číslo není v rozsahu od 0 do 100."
+    
+    #Logika převodu
+    if cislo in jednotky:
+        return jednotky[cislo]
+    elif cislo in teen:
+        return teen[cislo]
+    elif cislo in desitky:
+        return desitky[cislo]
+    elif 21 <= cislo < 100:
+        d = (cislo// 10) * 10
+        j = cislo % 10
+        return f"{desitky[d]} {jednotky[j]}"
+    elif cislo == 100:
+        return "sto"
+    else:
+        return "Číslo není v rozsahu od 0 do 100."
 
 #Zadání čísla
 cislo = int(input("Zadej číslo: "))
