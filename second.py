@@ -59,4 +59,4 @@ cislo = int(input("Zadej číslo: "))
 
 #vysledek
 vysledek = cislo_na_slovo(cislo)
-print(f"Číslo {ciisloo} slovně: {vysledek}")
+print(f"Číslo {cislo} slovně: {vysledek}")
