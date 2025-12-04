@@ -13,3 +13,11 @@ def bin_to_dec(binarni_cislo):
         decimal_value += int(bit)
 
     return decimal_value 
+
+if __name__ == "__main__":
+    print(bin_to_dec("0"))
+    print(bin_to_dec(1))
+    print(bin_to_dec("100"))
+    print(bin_to_dec(101))
+    print(bin_to_dec("010101"))
+    print(bin_to_dec(10000000))
